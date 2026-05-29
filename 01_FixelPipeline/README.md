@@ -1,5 +1,13 @@
 # 01_FixelPipeline
 
-Shell scripts for the MRtrix full fixel-based analysis pipeline; from population template building, fixel masking/segmentation to metric calculations. This section enables both single-subject and group-wise processing.
+This folder contains modular shell scripts for each processing step in the MRtrix fixel-based analysis pipeline.
 
-- Add all pipeline shell scripts here, modularize with clear file names, and provide description of expected input/outputs for each step.
+Each script is named by step order, making it easy to run individually or as part of the master pipeline. See the beginning of each script for usage examples and expected arguments.
+
+- 01_population_template.sh: Builds the group FOD template
+- 02_fixel_masking.sh: Segments template fixels and generates mask
+- 03_registration_to_template.sh: Registers individual FODs to template space
+- 04_fixel_metric_calculation.sh: Calculates fixel metrics (FD, FC, FDC)
+- 05_statistical_analysis.sh: Performs statistical tests (fixelcfestats)
+- 06_qc_fixel_mask.sh: Quick fixel mask/MRtrix viewer helper
+- master_fixel_pipeline.sh: Orchestrates entire pipeline
