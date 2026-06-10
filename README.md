@@ -14,3 +14,6 @@ It is based on HasiniWeerathunge/FixelBasedAnalysis. Here, structure, code, and 
 - `templates/`: Templates for subject lists, matrices, and code snippets
 
 See each folder's README for complete details.
+
+![Subject-level DWI processing](./fba_subject_level_pipeline.svg)
+
