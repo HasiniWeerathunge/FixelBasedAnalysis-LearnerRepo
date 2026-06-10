@@ -15,5 +15,7 @@ It is based on HasiniWeerathunge/FixelBasedAnalysis. Here, structure, code, and 
 
 See each folder's README for complete details.
 
+
+![Main DWI processing](./fba_pipeline_overview.svg)
 ![Subject-level DWI processing](./fba_subject_level_pipeline.svg)
 
